@@ -1,0 +1,37 @@
+# CODEOWNERS file for billing-processor-47
+# Global owners - will be requested for all PRs
+* @Armor-test/team-content @Armor-test/unit-ux @Armor-test/dept-reliability
+
+# Directory ownership
+/services/ @Armor-test/unit-mobile @Armor-test/dept-billing
+/test/ @Armor-test/dept-frontend @Armor-test/squad-network @Armor-test/unit-mobile
+/examples/ @Armor-test/grp-apps @Armor-test/dept-database @Armor-test/dept-network
+/shared/ @Armor-test/squad-notifications @Armor-test/dept-qa
+/tools/ @Armor-test/grp-payments @Armor-test/team-logging
+/views/ @Armor-test/grp-reliability @Armor-test/team-ux @Armor-test/team-metrics
+/api/ @Armor-test/dept-qa @Armor-test/team-core @Armor-test/squad-ui
+/assets/ @Armor-test/dept-messaging @Armor-test/squad-search
+/common/ @Armor-test/dept-search @Armor-test/grp-apps
+/static/ @Armor-test/dept-search @Armor-test/grp-notifications
+
+# File type ownership
+*.tf @Armor-test/dept-billing @Armor-test/dept-messaging @Armor-test/unit-logging
+*.kt @Armor-test/squad-network @Armor-test/squad-reporting
+*.yaml @Armor-test/grp-notifications @Armor-test/dept-messaging
+*.c @Armor-test/team-auth @Armor-test/dept-billing @Armor-test/team-architecture
+*.scss @Armor-test/team-auth @Armor-test/dept-qa
+*.py @Armor-test/team-core @Armor-test/grp-payments
+*.rb @Armor-test/squad-security @Armor-test/squad-notifications @Armor-test/grp-apps
+*.proto @Armor-test/grp-product @Armor-test/team-product
+*.go @Armor-test/dept-devops @Armor-test/unit-ux @Armor-test/team-qa
+*.graphql @Armor-test/dept-search @Armor-test/grp-notifications
+*.json @Armor-test/team-metrics @Armor-test/team-auth
+*.config @Armor-test/grp-sre @Armor-test/dept-search
+*.rs @Armor-test/dept-payments @Armor-test/team-qa @Armor-test/team-metrics
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
